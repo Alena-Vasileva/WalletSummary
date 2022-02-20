@@ -33,7 +33,7 @@
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="3*"/>
                     </Grid.ColumnDefinitions>
-                    <Entry x:Name="TokenEntry" Grid.Column="1" Placeholder="Wallet token" 
+                        <Entry x:Name="TokenEntry" Text="{Binding Token, Mode=TwoWay}" Grid.Column="1" Placeholder="Wallet token" 
                        PlaceholderColor="#C4C4C4" FontSize="16" FontFamily="SF-Pro-Text-Bold.otf"
                        HorizontalTextAlignment="Center"/>
                     <Button Grid.Column="2" Text="->" FontFamily="SF-Pro-Text-Bold.otf" 

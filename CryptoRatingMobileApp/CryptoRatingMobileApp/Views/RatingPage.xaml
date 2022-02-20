@@ -10,19 +10,56 @@
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Share" Icon="icon_share.png" Command="{Binding ShareCommand}" />
+        <ToolbarItem Text="Z" Icon="icon_zerion.png" Command="{Binding ZerionCommand}" />
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
-        <StackLayout>
-            <Picker Title="Select asset" ItemsSource="{Binding CountryList}">
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Profile" Grid.Row="1" FontSize="34" VerticalOptions="Center" Margin="20"
+                       TextColor="{StaticResource FontDark}" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                <!--<Picker Title="Select asset" ItemsSource="{Binding CountryList}" Margin="20">
                 <Picker.Items>
-                    <x:String>C#</x:String>
-                    <x:String>C/C++</x:String>
-                    <x:String>JavaScript</x:String>
-                    <x:String>PHP</x:String>
-                    <x:String>PHP2</x:String>
+                    <x:String>Criteria 1</x:String>
+                    <x:String>Criteria 2</x:String>
+                    <x:String>Criteria 3</x:String>
+                    <x:String>Criteria 4</x:String>
+                    <x:String>Criteria 5</x:String>
                 </Picker.Items>
-            </Picker>
-        </StackLayout>
+            </Picker>-->
+                <Grid Margin="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Absolute Change 24h" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center"/>
+                    <Label Text="{Binding Inf1, Mode=TwoWay}" Grid.Row="1" Grid.Column="2" HorizontalTextAlignment="Center"/>
+                    <Label Text="Assets value" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center"/>
+                    <Label Text="{Binding Inf2, Mode=TwoWay}" Grid.Row="2" Grid.Column="2" HorizontalTextAlignment="Center"/>
+                    <Label Text="Relative Change 24h" Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="Center"/>
+                    <Label Text="{Binding Inf3, Mode=TwoWay}" Grid.Row="3" Grid.Column="2" HorizontalTextAlignment="Center"/>
+                </Grid>
+                <Label Text="Assets" Grid.Row="1" FontSize="34" VerticalOptions="Center" Margin="20"
+                       TextColor="{StaticResource FontDark}" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                <Grid Margin="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Asset" Grid.Row="1" Grid.Column="1"/>
+                    <Label Text="{Binding Inf1, Mode=TwoWay}" Grid.Row="1" Grid.Column="2"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
