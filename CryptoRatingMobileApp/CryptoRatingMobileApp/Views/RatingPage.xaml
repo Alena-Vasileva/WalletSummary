@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CryptoRatingMobileApp.Views.RatingPage"
+             xmlns:vm="clr-namespace:CryptoRatingMobileApp.ViewModels"
+             Title="Summary">
+    <ContentPage.BindingContext>
+        <vm:RatingViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Share" Icon="icon_share.png" Command="{Binding ShareCommand}" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Picker Title="Select asset" ItemsSource="{Binding CountryList}">
+                <Picker.Items>
+                    <x:String>C#</x:String>
+                    <x:String>C/C++</x:String>
+                    <x:String>JavaScript</x:String>
+                    <x:String>PHP</x:String>
+                    <x:String>PHP2</x:String>
+                </Picker.Items>
+            </Picker>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

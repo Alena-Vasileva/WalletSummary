@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "PYYayGlDIs4t+YvVNPT5jLqDzMyRJqS/5wCWQu+rrJ/F7CkawPoyPpWiwepgFB86NdOYl5qgm1i+s7Tz1d6A9w==",
+  "success": true,
+  "projectFilePath": "D:\\Development\\Xamarin\\CryptoRating\\CryptoRatingMobileApp\\CryptoRatingMobileApp.iOS\\CryptoRatingMobileApp.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\angel\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\angel\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\angel\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
