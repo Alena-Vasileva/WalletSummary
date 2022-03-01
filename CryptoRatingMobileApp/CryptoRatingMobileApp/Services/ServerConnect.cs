@@ -17,6 +17,8 @@ namespace CryptoRatingMobileApp.Services
 
         public static string UserToken;
 
+        public static string Info;
+
         public static async Task<ProfileParse> GetZerion()
         {
             HttpClient client = new HttpClient();
@@ -40,7 +42,7 @@ namespace CryptoRatingMobileApp.Services
             //System.Diagnostics.Debug.WriteLine(result);
             //return await Task.FromResult(true);
             //return JsonConvert.DeserializeObject<ProfileParse>(result);
-            return new ProfileParse() { assets_value = 100, absolute_change_24h = 100, relative_change_24h = 1000 };
+            return new ProfileParse() { assets_value = 6230.5652, absolute_change_24h = -162.6369, relative_change_24h = -2.4638 };
         }
 
 

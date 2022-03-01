@@ -10,7 +10,7 @@
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Share" Icon="icon_share.png" Command="{Binding ShareCommand}" />
-        <ToolbarItem Text="Z" Icon="icon_zerion.png" Command="{Binding ZerionCommand}" />
+        <ToolbarItem Text="Z" Command="{Binding ZerionCommand}" />
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
@@ -44,7 +44,7 @@
                     <Label Text="Relative Change 24h" Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="Center"/>
                     <Label Text="{Binding Inf3, Mode=TwoWay}" Grid.Row="3" Grid.Column="2" HorizontalTextAlignment="Center"/>
                 </Grid>
-                <Label Text="Assets" Grid.Row="1" FontSize="34" VerticalOptions="Center" Margin="20"
+                <!--<Label Text="Assets" Grid.Row="1" FontSize="34" VerticalOptions="Center" Margin="20"
                        TextColor="{StaticResource FontDark}" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
                 <Grid Margin="20">
                     <Grid.RowDefinitions>
@@ -58,7 +58,7 @@
                     </Grid.ColumnDefinitions>
                     <Label Text="Asset" Grid.Row="1" Grid.Column="1"/>
                     <Label Text="{Binding Inf1, Mode=TwoWay}" Grid.Row="1" Grid.Column="2"/>
-                </Grid>
+                </Grid>-->
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

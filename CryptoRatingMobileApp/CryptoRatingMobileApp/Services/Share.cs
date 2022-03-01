@@ -12,9 +12,10 @@ namespace CryptoRatingMobileApp.Services
         {
             await Share.RequestAsync(new ShareTextRequest
             {
-                Text = text,
-                Title = "Share Text"
-            });
+                Text = "My Wallet Statistics\r\nAbsolute Change_24h= -162.6369\r\nAssets Value = 6230.5652\r\nRelative Change 24h = -2.4638",
+                Title =
+                "My Wallet Sttistic \r\nAbsolute Change_24h=-162.6369\r\nAssets Value = 6230.5652\r\nRelative Change 24h = -2.4638"
+            }); 
         }
     }
 }
