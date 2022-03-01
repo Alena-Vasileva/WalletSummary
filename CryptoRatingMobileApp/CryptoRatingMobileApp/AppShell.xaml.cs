@@ -17,5 +17,10 @@ namespace CryptoRatingMobileApp
             Routing.RegisterRoute(nameof(RatingPage), typeof(RatingPage));
         }
 
+        public void SetSummary()
+        {
+            CurrentItem = Summary;
+        }
+
     }
 }

@@ -31,7 +31,7 @@
 
     <TabBar>
         <ShellContent Title="Wallet" Icon="icon_wallet.png" Route="WalletPage" ContentTemplate="{DataTemplate local:WalletPage}" />
-        <ShellContent Title="Summary" Icon="icon_summary.png" ContentTemplate="{DataTemplate local:RatingPage}" />
+        <ShellContent x:Name="Summary" Title="Summary" Icon="icon_summary.png" ContentTemplate="{DataTemplate local:RatingPage}" />
     </TabBar>
 
     <!--

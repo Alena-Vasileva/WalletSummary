@@ -13,7 +13,6 @@ namespace CryptoRatingMobileApp.ViewModels
         public WalletViewModel()
         {
             Title = "Wallet";
-            OpenWebCommand = new Command(async () => await ServerConnect.GetZerion());
             OpenRatingCommand = new Command(async () => await UpdateRating());
         }
 
@@ -32,10 +31,9 @@ namespace CryptoRatingMobileApp.ViewModels
             RatingViewModel.inf1 = profile.absolute_change_24h.ToString();
             RatingViewModel.inf2 = profile.assets_value.ToString();
             RatingViewModel.inf3 = profile.relative_change_24h.ToString();
-            await Shell.Current.GoToAsync($"{nameof(RatingPage)}");
+            (Shell.Current as AppShell)?.SetSummary();
         }
 
-        public ICommand OpenWebCommand { get; }
         public ICommand OpenRatingCommand { get; }
     }
 }

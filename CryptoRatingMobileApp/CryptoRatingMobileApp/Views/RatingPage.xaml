@@ -10,7 +10,7 @@
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Share" Icon="icon_share.png" Command="{Binding ShareCommand}" />
-        <ToolbarItem Text="Z" Command="{Binding ZerionCommand}" />
+        <ToolbarItem Text="Z" Icon="icon_zerion.png" Command="{Binding ZerionCommand}" />
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
