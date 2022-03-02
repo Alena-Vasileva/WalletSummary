@@ -30,19 +30,28 @@ namespace CryptoRatingMobileApp.Services
 
         public static async Task<ProfileParse> GetSummary(string token)
         {
-            HttpClient client = new HttpClient();
-            //await client.PostAsync(ur + "/add/", stringContent);
-            //string result = await client.GetStringAsync("https://app.zerion.io/" + token + "/overview");
-            //System.Diagnostics.Debug.WriteLine(result);
-            MyString mstr = new MyString(token);
-            //var stringContent = new StringContent(JsonSerializer.Serialize<string>(token));
-            //var response = await client.PostAsync("http://194.67.121.113:8000/get_profile_info", stringContent);
-            //string result = await response.Content.ReadAsStringAsync();
-            
-            //System.Diagnostics.Debug.WriteLine(result);
-            //return await Task.FromResult(true);
-            //return JsonConvert.DeserializeObject<ProfileParse>(result);
-            return new ProfileParse() { assets_value = 6230.5652, absolute_change_24h = -162.6369, relative_change_24h = -2.4638 };
+            try
+            {
+                System.Diagnostics.Debug.WriteLine("STARTED " + "http://194.67.121.113:8080/profile/" + token);
+                HttpClient client = new HttpClient();
+                client.Timeout = TimeSpan.FromSeconds(20);
+                string result = await client.GetStringAsync("http://194.67.121.113:8080/profile/" + token);
+                /*string result = "";
+                if (token == "0x42b9df65b219b3dd36ff330a4dd8f327a6ada990")
+                {
+                    result = "{\"absolute_change_24h\": 111.95139302446205,  \"assets_value\": 5801.775144738031, \"relative_change_24h\": 1.8928003897737304}";
+                }
+                else
+                {
+                    throw new Exception();
+                }*/
+                System.Diagnostics.Debug.WriteLine(result);
+                return JsonConvert.DeserializeObject<ProfileParse>(result);
+            }
+            catch (Exception)
+            {
+                return new ProfileParse() { assets_value = "Incorrect wallet", absolute_change_24h = "Incorrect wallet", relative_change_24h = "Incorrect wallet" };
+            }
         }
 
 
@@ -58,9 +67,9 @@ namespace CryptoRatingMobileApp.Services
 
     public class ProfileParse
     {
-        public double absolute_change_24h;
-        public double assets_value;
-        public double relative_change_24h;
+        public string absolute_change_24h;
+        public string assets_value;
+        public string relative_change_24h;
     }
 
     public class MyString

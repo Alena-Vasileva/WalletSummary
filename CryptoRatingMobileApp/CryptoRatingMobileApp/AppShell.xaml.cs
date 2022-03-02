@@ -15,6 +15,7 @@ namespace CryptoRatingMobileApp
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
             Routing.RegisterRoute(nameof(WalletPage), typeof(WalletPage));
             Routing.RegisterRoute(nameof(RatingPage), typeof(RatingPage));
+            new RatingViewModel();
         }
 
         public void SetSummary()

@@ -28,9 +28,9 @@ namespace CryptoRatingMobileApp.ViewModels
             ServerConnect.UserToken=token;
             System.Diagnostics.Debug.WriteLine(token);
             ProfileParse profile = await ServerConnect.GetSummary(token);
-            RatingViewModel.inf1 = profile.absolute_change_24h.ToString();
-            RatingViewModel.inf2 = profile.assets_value.ToString();
-            RatingViewModel.inf3 = profile.relative_change_24h.ToString();
+            RatingViewModel.LinkRatingPage.Inf1 = profile.absolute_change_24h;
+            RatingViewModel.LinkRatingPage.Inf2 = profile.assets_value;
+            RatingViewModel.LinkRatingPage.Inf3 = profile.relative_change_24h;
             (Shell.Current as AppShell)?.SetSummary();
         }
 

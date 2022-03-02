@@ -10,10 +10,13 @@ namespace CryptoRatingMobileApp.ViewModels
 {
     internal class RatingViewModel : BaseViewModel
     {
+        public static RatingViewModel LinkRatingPage;
+
         public RatingViewModel()
         {
             ShareCommand = new Command(async () => await ShareContent.ShareText(Text));
             ZerionCommand = new Command(async () => await Browser.OpenAsync("https://app.zerion.io/connect-wallet"));
+            LinkRatingPage = this;
         }
 
         public string Text = "test text";
