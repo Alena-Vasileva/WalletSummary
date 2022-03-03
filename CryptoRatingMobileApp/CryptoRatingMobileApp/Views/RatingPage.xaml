@@ -15,10 +15,12 @@
 
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout>
-                <Label Text="Profile" Grid.Row="1" FontSize="34" VerticalOptions="Center" Margin="20"
+            <StackLayout BackgroundColor="{StaticResource BackgroundGrey}">
+                <Frame CornerRadius="10" Margin="20">
+                    <StackLayout BackgroundColor="{StaticResource BackgroundWhite}">
+                        <Label Text="Profile" Grid.Row="1" FontSize="34" VerticalOptions="Center" Margin="10"
                        TextColor="{StaticResource FontDark}" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
-                <!--<Picker Title="Select asset" ItemsSource="{Binding CountryList}" Margin="20">
+                        <!--<Picker Title="Select asset" ItemsSource="{Binding CountryList}" Margin="20">
                 <Picker.Items>
                     <x:String>Criteria 1</x:String>
                     <x:String>Criteria 2</x:String>
@@ -27,24 +29,24 @@
                     <x:String>Criteria 5</x:String>
                 </Picker.Items>
             </Picker>-->
-                <Grid Margin="20">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="Auto"/>
-                    </Grid.ColumnDefinitions>
-                    <Label Text="Absolute Change 24h" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center"/>
-                    <Label Text="{Binding Inf1, Mode=TwoWay}" Grid.Row="1" Grid.Column="2" HorizontalTextAlignment="Center"/>
-                    <Label Text="Assets value" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center"/>
-                    <Label Text="{Binding Inf2, Mode=TwoWay}" Grid.Row="2" Grid.Column="2" HorizontalTextAlignment="Center"/>
-                    <Label Text="Relative Change 24h" Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="Center"/>
-                    <Label Text="{Binding Inf3, Mode=TwoWay}" Grid.Row="3" Grid.Column="2" HorizontalTextAlignment="Center"/>
-                </Grid>
-                <!--<Label Text="Assets" Grid.Row="1" FontSize="34" VerticalOptions="Center" Margin="20"
+                        <Grid Margin="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Absolute Change 24h" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center"/>
+                            <Label Text="{Binding Inf1, Mode=TwoWay}" Grid.Row="1" Grid.Column="2" HorizontalTextAlignment="Center"/>
+                            <Label Text="Assets value" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center"/>
+                            <Label Text="{Binding Inf2, Mode=TwoWay}" Grid.Row="2" Grid.Column="2" HorizontalTextAlignment="Center"/>
+                            <Label Text="Relative Change 24h" Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="Center"/>
+                            <Label Text="{Binding Inf3, Mode=TwoWay}" Grid.Row="3" Grid.Column="2" HorizontalTextAlignment="Center"/>
+                        </Grid>
+                        <!--<Label Text="Assets" Grid.Row="1" FontSize="34" VerticalOptions="Center" Margin="20"
                        TextColor="{StaticResource FontDark}" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
                 <Grid Margin="20">
                     <Grid.RowDefinitions>
@@ -59,6 +61,8 @@
                     <Label Text="Asset" Grid.Row="1" Grid.Column="1"/>
                     <Label Text="{Binding Inf1, Mode=TwoWay}" Grid.Row="1" Grid.Column="2"/>
                 </Grid>-->
+                    </StackLayout>
+                </Frame>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

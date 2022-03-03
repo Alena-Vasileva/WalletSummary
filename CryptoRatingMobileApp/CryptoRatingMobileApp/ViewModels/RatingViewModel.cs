@@ -5,6 +5,8 @@ using Xamarin.Forms;
 using CryptoRatingMobileApp.Views;
 using System.Threading.Tasks;
 using CryptoRatingMobileApp.Services;
+using System.Threading;
+using System.Globalization;
 
 namespace CryptoRatingMobileApp.ViewModels
 {
@@ -25,24 +27,48 @@ namespace CryptoRatingMobileApp.ViewModels
         public string Inf1
         {
             get => inf1;
-            set => SetProperty(ref inf1, value);
+            set => SetProperty(ref inf1, Round(value));
         }
 
         public static string inf2 = "Enter wallet";
         public string Inf2
         {
             get => inf2;
-            set => SetProperty(ref inf2, value);
+            set => SetProperty(ref inf2, Round(value));
         }
 
         public static string inf3 = "Enter wallet";
         public string Inf3
         {
             get => inf3;
-            set => SetProperty(ref inf3, value);
+            set => SetProperty(ref inf3, Round(value));
         }
 
         public ICommand ShareCommand { get; }
         public ICommand ZerionCommand { get; }
+
+        private string Round(string accurateValue)
+        {
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("es-AR"); // Espanol - Argentina
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("es-AR");// Espanol - Argentina
+            if (double.TryParse(accurateValue, out double x))
+            {
+                string res = "";
+                int n = accurateValue.Length;
+                for (int i = 0; i < n; i++)
+                {
+                    res += accurateValue[i];
+                    if (accurateValue[i]=='.')
+                    {
+                        n = i + 3;
+                    }
+                }
+                return res;
+            }
+            else
+            {
+                return accurateValue;
+            }
+        }
     }
 }

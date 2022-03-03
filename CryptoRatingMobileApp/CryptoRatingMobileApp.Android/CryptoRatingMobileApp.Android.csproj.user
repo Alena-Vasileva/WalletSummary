@@ -3,7 +3,7 @@
   <PropertyGroup>
     <SelectedDevice>HUAWEI COL-L29</SelectedDevice>
     <ActiveDebugProfile>HUAWEI COL-L29</ActiveDebugProfile>
-    <DefaultDevice>pixel_5_-_api_28_2</DefaultDevice>
+    <DefaultDevice>pixel_5_-_api_28_new</DefaultDevice>
     <AndroidDesignerPreferredTheme>MainTheme</AndroidDesignerPreferredTheme>
   </PropertyGroup>
 </Project>

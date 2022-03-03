@@ -633,8 +633,9 @@ D:\Development\Xamarin\CryptoRating\CryptoRatingMobileApp\CryptoRatingMobileApp.
 D:\Development\Xamarin\CryptoRating\CryptoRatingMobileApp\CryptoRatingMobileApp.Android\obj\Debug\120\res\drawable\icon_about.png
 D:\Development\Xamarin\CryptoRating\CryptoRatingMobileApp\CryptoRatingMobileApp.Android\obj\Debug\120\res\drawable\icon_feed.png
 D:\Development\Xamarin\CryptoRating\CryptoRatingMobileApp\CryptoRatingMobileApp.Android\obj\Debug\120\res\drawable\xamarin_logo.png
-D:\Development\Xamarin\CryptoRating\CryptoRatingMobileApp\CryptoRatingMobileApp.Android\obj\Debug\120\res\drawable\logo_rating.png
 D:\Development\Xamarin\CryptoRating\CryptoRatingMobileApp\CryptoRatingMobileApp.Android\obj\Debug\120\res\drawable\icon_summary.png
 D:\Development\Xamarin\CryptoRating\CryptoRatingMobileApp\CryptoRatingMobileApp.Android\obj\Debug\120\res\drawable\logo_summary.png
 D:\Development\Xamarin\CryptoRating\CryptoRatingMobileApp\CryptoRatingMobileApp.Android\obj\Debug\120\android\assets\Newtonsoft.Json.dll
 D:\Development\Xamarin\CryptoRating\CryptoRatingMobileApp\CryptoRatingMobileApp.Android\obj\Debug\120\res\drawable\icon_zerion.png
+D:\Development\Xamarin\CryptoRating\CryptoRatingMobileApp\CryptoRatingMobileApp.Android\obj\Debug\120\res\drawable\logo_statistics.png
+D:\Development\Xamarin\CryptoRating\CryptoRatingMobileApp\CryptoRatingMobileApp.Android\obj\Debug\120\res\drawable\logo_statisctic.png

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CryptoRatingMobileApp.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,10 +13,12 @@ namespace CryptoRatingMobileApp.Services
         {
             await Share.RequestAsync(new ShareTextRequest
             {
-                Text = "My Wallet Statistics\r\nAbsolute Change_24h= -162.6369\r\nAssets Value = 6230.5652\r\nRelative Change 24h = -2.4638",
-                Title =
-                "My Wallet Sttistic \r\nAbsolute Change_24h=-162.6369\r\nAssets Value = 6230.5652\r\nRelative Change 24h = -2.4638"
-            }); 
+                Text = $"My Wallet Statistics" +
+                $"\r\nAbsolute Change 24h = {RatingViewModel.LinkRatingPage.Inf1}" +
+                $"\r\nAssets Value = {RatingViewModel.LinkRatingPage.Inf2}" +
+                $"\r\nRelative Change 24h = {RatingViewModel.LinkRatingPage.Inf3}",
+                Title = "My Wallet Sttistic"
+            });
         }
     }
 }

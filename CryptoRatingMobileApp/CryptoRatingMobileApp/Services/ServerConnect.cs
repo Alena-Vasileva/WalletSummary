@@ -4,10 +4,6 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Net.Http;
 
 namespace CryptoRatingMobileApp.Services
 {
@@ -32,10 +28,10 @@ namespace CryptoRatingMobileApp.Services
         {
             try
             {
-                System.Diagnostics.Debug.WriteLine("STARTED " + "http://194.67.121.113:8080/profile/" + token);
+                System.Diagnostics.Debug.WriteLine("STARTED " + "http://194.67.121.113:8080/subscribe/profile/" + token);
                 HttpClient client = new HttpClient();
-                client.Timeout = TimeSpan.FromSeconds(20);
-                string result = await client.GetStringAsync("http://194.67.121.113:8080/profile/" + token);
+                client.Timeout = TimeSpan.FromSeconds(8);
+                string result = await client.GetStringAsync("http://194.67.121.113:8080/subscribe/profile/" + token);
                 /*string result = "";
                 if (token == "0x42b9df65b219b3dd36ff330a4dd8f327a6ada990")
                 {
@@ -55,14 +51,14 @@ namespace CryptoRatingMobileApp.Services
         }
 
 
-        public static async Task<RootParse> GetAssets(string token)
-        {
-            HttpClient client = new HttpClient();
-            //wait client.PostAsync(url + "/add/", stringContent);
-            //string result = await client.GetStringAsync(url);
-            //return JsonConvert.DeserializeObject<ProfileParse>(result);
-            return new RootParse();
-        }
+        //public static async Task<RootParse> GetAssets(string token)
+        //{
+        //    HttpClient client = new HttpClient();
+        //    //wait client.PostAsync(url + "/add/", stringContent);
+        //    //string result = await client.GetStringAsync(url);
+        //    //return JsonConvert.DeserializeObject<ProfileParse>(result);
+        //    return new RootParse();
+        //}
     }
 
     public class ProfileParse
