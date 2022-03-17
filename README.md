@@ -4,6 +4,8 @@ Wallet Summary
 
 Upd: 1 место на треке
 
+<img src="https://github.com/Alena-Vasileva/WalletSummary/blob/master/img/CometDefinition.jpg" width="500" />
+
 Содержание
 ---
 + [**Проблема**](#проблема)  
@@ -132,8 +134,10 @@ Use Cases
 
 Демонстрация решения
 ---
-*В разработке*
+[Демка мобильного приложения](https://github.com/Alena-Vasileva/WalletSummary/blob/master/img/Demo.mp4)
+
+[Презентация](https://github.com/Alena-Vasileva/WalletSummary/blob/master/img/WalletSummaryPresentation.pdf)
 
 Направления дальнейшей разработки
 ---
-*В разработке*
+Проект вырос в социальную сеть для крипто-инвесторов и продолжит жизнь в другом репозитории 
