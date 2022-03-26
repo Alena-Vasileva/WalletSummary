@@ -4,7 +4,7 @@ Wallet Summary
 
 Upd: 1 место на треке
 
-<img src="https://github.com/Alena-Vasileva/WalletSummary/blob/master/img/CometDefinition.jpg" width="500" />
+<img src="https://github.com/advasileva/WalletSummary/blob/master/img/CometDefinition.jpg" width="500" />
 
 Содержание
 ---
@@ -25,7 +25,7 @@ Upd: 1 место на треке
 Проблема
 ---
 На хакатоне команда выбрала кейс от компании Zerion и работала над новым способом социального взаимодействия в Web3.0. Мы выделили проблему использования DeFi небольшим числом потенциальных пользователей, которые относятся к числу инноваторов. Так что мы стремились расширить базу пользователей путём привлечения ранних последователей в DeFi. Их отличительной чертой является то, что им нужно одобрение экспертов, чтобы начать пользоваться новой технологией. 
-![.](https://github.com/Alena-Vasileva/ClientServerApp/blob/master/CustDevStatistics.png)
+![.](https://github.com/advasileva/WalletSummary/blob/master/img/CustDevStatistics.png)
 
 Решение
 ---
@@ -108,7 +108,7 @@ Use Cases
 ---
 ### Мобильное приложение
 Клиентская часть приложения будет разработана с использованием технологии Xamarin  Forms, которая была выбрана благодаря её кроссплатформенности. При проектировании будет применяться шаблон MVVM, так как он соответствует современным стандартам и рекомендуется [Microsoft](https://docs.microsoft.com/ru-ru/xamarin/xamarin-forms/enterprise-application-patterns/mvvm).
-![.](https://github.com/Alena-Vasileva/FarmerCyberAssistant/blob/main/img/Image_2.jpg)
+![.](https://github.com/advasileva/FarmerCyberAssistant/blob/main/img/Image_2.jpg)
 В приложении есть две страницы:
 + Для подключения кошелька по его токену
 + Для просмотра summary по кошельку и возможности им поделиться в социальных сетях (использованы встроенные технологии Android)
@@ -134,9 +134,9 @@ Use Cases
 
 Демонстрация решения
 ---
-[Демка мобильного приложения](https://github.com/Alena-Vasileva/WalletSummary/blob/master/img/Demo.mp4)
+[Демка мобильного приложения](https://github.com/advasileva/WalletSummary/blob/master/img/Demo.mp4)
 
-[Презентация](https://github.com/Alena-Vasileva/WalletSummary/blob/master/img/WalletSummaryPresentation.pdf)
+[Презентация](https://github.com/advasileva/WalletSummary/blob/master/img/WalletSummaryPresentation.pdf)
 
 Направления дальнейшей разработки
 ---
